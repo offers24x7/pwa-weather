@@ -1,7 +1,7 @@
 import Axios from 'axios';
 
 const URL= process.env.REACT_APP_URL;
-const APIKEY = REACT_APP_API_KEY;
+const APIKEY = process.env.REACT_APP_API_KEY;
 
 export const fetchWeather = async(query)=>{
     const {data} = await Axios.get(URL,
